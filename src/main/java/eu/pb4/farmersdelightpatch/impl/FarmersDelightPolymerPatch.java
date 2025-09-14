@@ -1,5 +1,6 @@
 package eu.pb4.farmersdelightpatch.impl;
 
+import eu.pb4.farmersdelightpatch.impl.compat.MoreDelightCompat;
 import eu.pb4.farmersdelightpatch.impl.polydex.PolydexCompat;
 import eu.pb4.farmersdelightpatch.impl.res.GuiTextures;
 import eu.pb4.farmersdelightpatch.impl.res.ResourcePackGenerator;
@@ -42,6 +43,7 @@ public class FarmersDelightPolymerPatch implements ModInitializer {
         ResourcePackGenerator.setup();
         GuiTextures.register();
         PolydexCompat.register();
+        MoreDelightCompat.register();
     }
 
     public static Identifier id(String path) {
